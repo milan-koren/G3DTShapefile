@@ -34,7 +34,9 @@ HEADERS += \
     dbffileheader.h \
     g3dtshapefile.h \
     g3dtshapefile_global.h \
+    shapebox.h \
     shapefile.h \
+    shapepoint.h \
     shpmultipatch.h \
     shpmultipoint.h \
     shpmultipointm.h \
