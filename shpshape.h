@@ -1,9 +1,11 @@
 #ifndef SHPSHAPE_H
 #define SHPSHAPE_H
 
-#include <g3dtshapefile_global.h>
 #include <QtCore>
 #include <QFile>
+#include <g3dtshapefile_global.h>
+#include "shapebox.h"
+#include "shapepoint.h"
 
 /*!
  * *****************************************************************
@@ -33,26 +35,6 @@
 #define SHP_POLYGONZ	(15)
 #define SHP_POLYGONM	(25)
 #define SHP_MULTIPATCH	(31)
-
-
-#pragma pack(2)
-
-struct G3DTSHAPEFILE_EXPORT ShapeBox
-{
-    double x0;          //!< little-endian, minimal x-coordinate
-    double y0;          //!< little-endian, minimal y-coordinate
-    double x1;          //!< little-endian, maximal x-coordinate
-    double y1;          //!< little-endian, maximal y-coordinate
-};
-
-struct G3DTSHAPEFILE_EXPORT ShapePoint
-{
-    double x; //!< x-coordinate
-    double y; //!< y-coordinate
-};
-
-#pragma pack()
-
 
 class G3DTSHAPEFILE_EXPORT ShpShape
 {
