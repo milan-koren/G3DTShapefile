@@ -1,11 +1,9 @@
 #ifndef G3DTSHAPEFILE_H
 #define G3DTSHAPEFILE_H
 
-#include "shapefile.h"
-
 /*!
  * *****************************************************************
- *                            G3DTShapeFile
+ *                            G3DTShapefile
  * *****************************************************************
  * \file g3dtshapefile.h
  *
@@ -20,5 +18,7 @@
  * http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf
  * *****************************************************************
  */
+
+#include "shapefile.h"
 
 #endif // G3DTSHAPEFILE_H
