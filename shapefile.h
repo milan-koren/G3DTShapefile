@@ -1,28 +1,9 @@
 #ifndef SHAPEFILE_H
 #define SHAPEFILE_H
 
-#include <QString>
-#include <QFile>
-#include "g3dtshapefile_global.h"
-#include "dbffile.h"
-#include "shpshape.h"
-#include "shppoint.h"
-#include "shppointm.h"
-#include "shppointz.h"
-#include "shpmultipoint.h"
-#include "shpmultipointm.h"
-#include "shpmultipointz.h"
-#include "shppolyline.h"
-#include "shppolylinem.h"
-#include "shppolylinez.h"
-#include "shppolygon.h"
-#include "shppolygonm.h"
-#include "shppolygonz.h"
-#include "shpmultipatch.h"
-
 /*!
  * *****************************************************************
- *                            G3DTShapeFile
+ *                            G3DTShapefile
  * *****************************************************************
  * \file shpfile.h
  *
@@ -36,6 +17,11 @@
  * *****************************************************************
  */
 
+#include <QString>
+#include <QFile>
+#include "g3dtshapefile_global.h"
+#include "Dbf/dbf.h"
+#include "Shp/shp.h"
 
 #define SHP_SHPFILE_EXT ".shp"
 #define SHP_SHXFILE_EXT ".shx"
@@ -108,6 +94,7 @@ public:
     bool readShape(qint64 recordIndex, ShpShape &shp);
 
     QStringList getColumnNames();
+    QStringList getTextColumnNames();
 
 protected:
     QString changeFileExtension(QString fileName, QString newExtension);
