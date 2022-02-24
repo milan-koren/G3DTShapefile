@@ -1,13 +1,9 @@
 #ifndef SHAPEPOINT_H
 #define SHAPEPOINT_H
 
-#include <QtCore>
-#include <g3dtshapefile_global.h>
-#include "shapebox.h"
-
 /*!
  * *****************************************************************
- *                            G3DTShapeFile
+ *                            G3DTShapefile
  * *****************************************************************
  * \file shapepoint.h
  *
@@ -17,6 +13,9 @@
  * https://joinup.ec.europa.eu/collection/eupl
  * *****************************************************************
  */
+
+#include "g3dtshapefile_global.h"
+#include "shapebox.h"
 
 #pragma pack(2)
 
