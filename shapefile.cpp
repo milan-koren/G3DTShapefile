@@ -1,9 +1,6 @@
-#include <QtEndian>
-#include "shapefile.h"
-
 /*!
  * *****************************************************************
- *                             G3DTShapeFile
+ *                             G3DTShapefile
  * *****************************************************************
  * \file shapefile.cpp
  *
@@ -13,6 +10,9 @@
  * https://joinup.ec.europa.eu/collection/eupl
  * *****************************************************************
  */
+
+#include <QtEndian>
+#include "shapefile.h"
 
 
 /*!
@@ -243,12 +243,22 @@ bool ShapeFile::readShape(qint64 recordIndex, ShpShape &shp)
 
 
 /*!
- * \brief Returns the list of column names in associated DBF.
+ * \brief Returns the list of column names in DBF.
  * \return List of DBF column names.
  */
 inline QStringList ShapeFile::getColumnNames()
 {
     return this->dbf.getColumnNames();
+}
+
+
+/*!
+ * \brief Returns the list of text column names in DBF.
+ * \return List of DBF text column names.
+ */
+inline QStringList ShapeFile::getTextColumnNames()
+{
+    return this->dbf.getTextColumnNames();
 }
 
 
