@@ -1,10 +1,10 @@
 /*!
  * *****************************************************************
- *                           G3DTShapeFile
+ *                           G3DTShapefile
  * *****************************************************************
  * \file licence.txt
  *
- * \brief G3DTShapeFile Licence
+ * \brief G3DTShapefile Licence
  *
  * \author M. Koren, milan.koren3@gmail.com
  * Source: https:\\github.com/milan-koren/G3DTLas
