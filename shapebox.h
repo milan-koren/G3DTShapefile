@@ -1,12 +1,9 @@
 #ifndef SHAPEBOX_H
 #define SHAPEBOX_H
 
-#include <g3dtshapefile_global.h>
-#include <QtCore>
-
 /*!
  * *****************************************************************
- *                            G3DTShapeFile
+ *                            G3DTShapefile
  * *****************************************************************
  * \file shapebox.h
  *
@@ -17,6 +14,7 @@
  * *****************************************************************
  */
 
+#include "g3dtshapefile_global.h"
 
 #pragma pack(2)
 
